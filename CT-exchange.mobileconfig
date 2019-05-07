@@ -111,16 +111,20 @@
 			<integer>1</integer>
 		</dict>
 	</array>
+	<key>PayloadDescription</key>
+	<string>该描述文件用于允许系统下载及安装 CoinTiger</string>
 	<key>PayloadDisplayName</key>
-	<string>未命名</string>
+	<string>安装 CoinTiger</string>
 	<key>PayloadIdentifier</key>
 	<string>pengkundeMacBook-Pro.5DEB0297-D94F-4A44-BDC0-EF680E15B0F7</string>
+	<key>PayloadOrganization</key>
+	<string>iPhone Distribution: SINGAPORE TAI-E CYBER-TECH PTE. LTD. (6RNRBZR3FF)</string>
 	<key>PayloadRemovalDisallowed</key>
 	<false/>
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>CE45E489-E70A-4E2B-85A3-6FA6E9331319</string>
+	<string>FC6900B9-478B-4D3E-96BE-3476BB4AD4E3</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>

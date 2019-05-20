@@ -25932,15 +25932,15 @@
 			<key>PayloadDisplayName</key>
 			<string>Web Clip</string>
 			<key>PayloadIdentifier</key>
-			<string>com.apple.webClip.managed.F2FE01F1-F281-4FA1-A8B7-DF9175FD78F1</string>
+			<string>com.apple.webClip.managed.975A68C5-6960-4235-99BA-4F592919A767</string>
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
 			<key>PayloadUUID</key>
-			<string>F2FE01F1-F281-4FA1-A8B7-DF9175FD78F1</string>
+			<string>975A68C5-6960-4235-99BA-4F592919A767</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>Precomposed</key>
-			<false/>
+			<true/>
 			<key>URL</key>
 			<string>https://www.cointiger.one/zh-cn/#/app_download</string>
 		</dict>
@@ -25956,7 +25956,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>7E82A610-2F64-407C-A6A9-8F461ED5EE19</string>
+	<string>A3DA72D5-185E-4EDC-A338-B459ED57F517</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>

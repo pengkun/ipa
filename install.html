@@ -1,6 +1,9 @@
 <!doctype HTML>
 <html>
     <head>
+
+    	<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="./js/qrcode.min.js"></script>
         <style>
             .main {
                 text-align: center; /*让div内部文字居中*/
@@ -30,9 +33,39 @@
     </head>
     
     <div class="main">
-        <img style="text-align:center" src="https://raw.githubusercontent.com/pengkun/ipa/master/qrcode.jpg" width="400" height="400" alt=""/>
+        <!-- <img style="text-align:center" src="https://raw.githubusercontent.com/pengkun/ipa/master/qrcode.jpg" width="400" height="400" alt=""/> -->
+        <input id="text" type="text" value="itms-services:///?action=download-manifest&url=https://download.cointiger.one/Cointiger-TaiOne/APP_Download/master/iOS/4.5.4/manifest.plist" style="width:250%; height:60px"/><br />
+        <div id="qrcode" style="width:400px; height:400px; margin-top:15px;"></div>
         <h1 style="text-align:center" >CoinTiger</h1>
-        <a style="text-align:center" href="itms-services:///?action=download-manifest&url=https://raw.githubusercontent.com/pengkun/ipa/master/manifest.plist">点我下载</a>
+        <a style="text-align:center" href="itms-services:///?action=download-manifest&url=https://download.cointiger.one/Cointiger-TaiOne/APP_Download/master/iOS/4.5.4/manifest.plist">点我下载</a>
+        <script type="text/javascript">
+			var qrcode = new QRCode(document.getElementById("qrcode"), {
+				width : 400,
+				height : 400
+			});
+			function makeCode () {		
+				var elText = document.getElementById("text");
+	
+				if (!elText.value) {
+					alert("Input a text");
+					elText.focus();
+					return;
+				}
+				
+				qrcode.makeCode(elText.value);
+			}
+			window.onload = makeCode;
+
+			$("#text").
+				on("blur", function () {
+					makeCode();
+				}).
+				on("keydown", function (e) {
+					if (e.keyCode == 13) {
+						makeCode();
+					}
+				});
+			</script>
     </div>
     
 </html>
